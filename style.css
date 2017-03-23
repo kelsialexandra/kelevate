@@ -1,0 +1,425 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face {
+    font-family: 'harabarahanditalic';
+    src: url('fonts/chosen-fonts/harabarahand-webfont.eot');
+    src: url('fonts/chosen-fonts/harabarahand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/chosen-fonts/harabarahand-webfont.woff2') format('woff2'),
+         url('fonts/chosen-fonts/harabarahand-webfont.woff') format('woff'),
+         url('fonts/chosen-fonts/harabarahand-webfont.ttf') format('truetype'),
+         url('fonts/chosen-fonts/harabarahand-webfont.svg#harabarahanditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{
+	width: 100%;
+	min-width: 250px;
+}
+
+header{
+	background:
+
+    url(images/1header-image.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 640px;
+	display: flex;
+	flex-direction:column;
+	position: relative;
+}
+
+
+nav {
+	width: 100%;
+	padding: 1% 0%;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+}
+
+header ul{
+	padding: 1% 0%;
+	display: flex;
+	justify-content: space-around;
+}
+
+header a{
+	text-decoration: none;
+}
+
+h1{
+	width: 100%;
+	padding: 5% 0% 10% 0%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 4em;
+	font-family: 'harabarahanditalic', sans-serif;
+}
+
+h2{
+	width: 100%;
+	padding: 5% 0% 10% 0%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 2em;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+h3{
+	width: 100%;
+	padding: 3% 0% 0% 0%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 1em;
+	line-height: 300%;
+	font-family: 'Raleway', sans-serif;
+}
+p{
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+}
+.body-content{
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	max-width: 600px;
+}
+
+a{
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.down-arrow {
+	color: #ffffff;
+	position: absolute;
+	align-items: center;
+	bottom: 10px;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 100px; 
+	text-align:center;
+}
+
+.about{
+	background:
+	linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/about.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	align-items: center;
+	flex-direction:column;
+	flex-wrap: wrap;
+	line-height: 300%;
+	position: relative;
+}
+
+.services{
+	background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/services.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction:column;
+	position: relative;
+}
+
+.services li{
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'Raleway', sans-serif;
+	line-height: 300%;
+}
+
+.case-studies{
+	background:
+	linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/case-studies.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: space-around;
+}
+
+.case-studies h2{
+	position: absolute;
+	top: 1px;
+}
+
+.ford { 
+	position: absolute; 
+  	top: 0; left: 0; right: 50%; bottom: 50%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+     }
+.starbucks { 
+	position: absolute; 
+  	top: 0; left: 50%; right: 0; bottom: 50%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+       }
+.toy { 
+	position: absolute; 
+  	top: 50%; left: 0; right: 50%; bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+      }
+.vega { 
+	position: absolute; 
+	top: 50%; left: 50%; right: 0; bottom: 0; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+      } 
+
+.ford-logo{
+	height: 200px;
+	margin-top: 100px;
+
+}
+
+.starbucks-logo{
+	height: 150px;
+	width: 150px;
+	margin-top: 100px;
+
+}
+
+.toy-logo{
+	height: 50px;
+
+}
+
+.vega-logo{
+	height: 50px;
+	
+}
+
+.ford-case-study{
+	background-color:#1C1D21;
+	width: 50%;
+	position: absolute;
+    top: 100px;
+    left: 50px;
+	padding: 5%;
+	line-height: 1.5em;
+	display: none;
+	
+}
+
+.starbucks-case-study{
+	background-color:#1C1D21;
+	width: 50%;
+	position: absolute;
+    top: 100px;
+    right: 50px;
+	padding: 5%;
+	line-height: 1.5em;
+	display: none;
+}
+
+.toy-case-study{
+	background-color:#1C1D21;
+	width: 50%;
+	position: absolute;
+    bottom: 100px;
+    left: 50px;
+	padding: 5%;
+	line-height: 1.5em;
+	display: none;
+}
+
+.vega-case-study{
+	background-color:#1C1D21;
+	width: 50%;
+	position: absolute;
+    bottom: 100px;
+    right: 50px;
+	padding: 5%;
+	line-height: 1.5em;
+	display: none;
+}
+
+
+.case-studies img{
+	flex-wrap:wrap;
+	align-content: center;
+}
+
+.exit-case-study{
+	color: #ffffff;
+	width: 50px;
+	position:relative;
+}
+
+.contact{
+	background:
+	linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/contact-us.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	line-height: 300%;
+	position: relative;
+}
+
+.contact p{
+	padding: 0% 0% 10% 0%;
+}
+footer{
+	background: #1C1D21;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer p{
+	color: #ffffff;
+}
+
+button{
+	height: 50px;
+	width: 120px;
+	border-radius: 50px;
+	color: #ffffff;
+	background-color:#004056;
+	font-size: 1em;
+    font-family: 'Raleway';
+	border: none;
+}
+
+button:hover{
+	height: 50px;
+	width: 120px;
+	border-radius: 50px;
+	color: #ffffff;
+	background-color:#2C858D;
+	font-size: 1em;
+	font-family: 'Raleway';
+	border: none;
+}
+.form{
+	height: 400px;
+	width: 50%;
+	min-width: 250px;
+	background: #2C858D;
+	padding: 2%;
+	line-height: 120%;
+	position:absolute;
+	top: 55px;
+	display: none;
+}
+
+.form form{
+	display: flex;
+	flex-direction: column;
+}
+
+.form button{
+	align-self: center;
+	padding: 5px 0px;
+	position: relative;
+	top: 10px;
+}
+
+.form button:hover{
+	background-color: #FF7919;
+}
+
+.form-exit{
+	color: #ffffff;
+	width: 50px;
+	align-self: flex-end;
+}
+
+label{
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'Raleway', sans-serif;
+	padding: 1%;
+}
+
+textarea{
+	padding: 1%;
+}
+
+.footer-address{
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	padding: 2%;
+	line-height: 150%;
+}
+
+.social-media{
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	padding: 2%;
+	line-height: 150%;
+}
+
+
