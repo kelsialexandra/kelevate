@@ -467,4 +467,7 @@ textarea{
 	width: 100%;
 }
 
+.body-content{
+	line-height: 250%;
+}
 }
