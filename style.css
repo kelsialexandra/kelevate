@@ -447,5 +447,24 @@ textarea{
 	
 }
 
+.contact p{
+	padding: 0% 0% 40% 0%;
+}
+
+.ford-case-study{
+	width: 100%;	
+}
+
+.starbucks-case-study{
+	width: 100%;
+}
+
+.toy-case-study{
+	width: 100%;
+}
+
+.vega-case-study{
+	width: 100%;
+}
 
 }
