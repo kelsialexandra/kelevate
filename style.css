@@ -422,4 +422,30 @@ textarea{
 	line-height: 150%;
 }
 
+@media all and (max-width: 600px) {
 
+.ford-logo{
+	height: 100px;
+	margin-top: 50px;
+
+}
+
+.starbucks-logo{
+	height: 90px;
+	width: 90px;
+	margin-top: 100px;
+
+}
+
+.toy-logo{
+	height: 50px;
+
+}
+
+.vega-logo{
+	height: 50px;
+	
+}
+
+
+}
